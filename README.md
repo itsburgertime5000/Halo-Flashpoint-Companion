@@ -1,16 +1,16 @@
 # Halo: Flashpoint Game Companion
 
-Multi-page static website with two independent game-mode trackers.
+Static GitHub Pages website with three pages:
 
-## Files
-- `index.html` — companion home page / game mode selection
-- `generator-raid.html` — Generator Raid tracker
-- `husky-oddball.html` — Husky Oddball: Reloaded tracker
-- `assets/halo-scene-1.webp` … `halo-scene-4.webp` — optimized local background images
+- `index.html` — Mission selection
+- `generator-raid.html` — Generator Raid tracker, static dark gradient background
+- `husky-oddball.html` — Husky Oddball: Reloaded tracker, rotating Oddball screenshots
+- `shared-theme.css` — Unified colors, typography, buttons, spacing, cards and navigation
+- `assets/` — Image assets for the home page and other visuals
 
-## Publishing with GitHub Pages
-Upload **all files and the `assets` folder** to the root of the GitHub Pages publishing branch. Ensure `index.html` is at the root. In repository Settings → Pages, confirm the source branch and root folder. After deploying, open your GitHub Pages URL.
+## Deploy
+Upload **all files and the assets folder** from this ZIP into the branch/folder used by GitHub Pages. Keep the HTML files and shared stylesheet in the same directory. Opening `index.html` launches the mission-selection page.
 
-The two trackers use separate localStorage keys, so progress is independent. Existing Generator Raid and Husky Oddball local save data remains accessible when running from the **same origin** as before, as long as it used the same localStorage keys. Changing the hosting address changes the storage origin.
+Both game modes save their state independently to browser localStorage, using their existing storage keys. The website does not require a backend.
 
-No build step or external dependency is required. Open `index.html` locally or use any static web server.
+Updating the site does not intentionally clear either game's saved data.
