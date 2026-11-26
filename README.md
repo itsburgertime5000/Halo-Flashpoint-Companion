@@ -46,3 +46,11 @@ The two maps now use matching subdued L-wall visuals (original orientations pres
 
 ### v12 navigation fix
 Restored the full navigation layout and button styling to King of the Hill and added shared navigation layout defaults to `shared-theme.css`. Site links and game state keys remain unchanged.
+
+## v14 — King of the Hill map refinements
+
+- The active hill uses one accurately positioned 2×2 outline around the exact four cubes for each zone A–E.
+- E4–E5 is depicted as one joined +2-height UNSC container above the two lower 1×2 containers.
+- B2 L-wall rotated counterclockwise (bottom-right); G7 L-wall rotated clockwise (top-left).
+- G2 and B7 +1 towers use Husky Oddball-style square terrain artwork.
+- Generator Raid and Husky Oddball logic and visual maps are unchanged.
