@@ -14,3 +14,12 @@ Upload **all files and the assets folder** from this ZIP into the branch/folder 
 Both game modes save their state independently to browser localStorage, using their existing storage keys. The website does not require a backend.
 
 Updating the site does not intentionally clear either game's saved data.
+
+Visual update v6: Removed the eyebrow labels from both game-mode headings. All three pages use the same static dark-blue gradient background; Husky Oddball no longer rotates gameplay backgrounds. Home-page card images remain unchanged.
+
+## v7 updates
+
+- Generator Raid and Husky Oddball mission cards on the home page both rotate their own four image assets every 14 seconds with a 2.4-second fade.
+- Each entire card is a keyboard-accessible link to its own game page; the colored action bar remains as the visual affordance.
+- Updated `shared-theme.css` to align card spacing, text, colors, buttons, and surfaces with the two gameplay pages.
+- Both game-mode pages retain their existing independent local save keys and tracking rules.
