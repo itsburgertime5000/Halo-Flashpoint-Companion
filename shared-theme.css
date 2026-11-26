@@ -191,3 +191,19 @@ body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,
 #main-app .hill-layout .panel,#main-app .info-grid .panel{background:linear-gradient(165deg,#14283b,#101d2c)!important;border:1px solid var(--hf-border)!important;border-radius:var(--hf-radius)!important;padding:16px!important}
 #main-app .hill-layout .capture button{min-height:44px!important}
 #main-app .score-quick button{min-height:44px!important}
+
+/* Shared UNSC container look for Generator Raid, Husky Oddball and King of the Hill.
+   The map's own coordinates, elevation tags, objectives and flags remain on top. */
+.tile.hf-container-tile,
+.tactical-map-panel .tile.hf-container-tile {
+  background:repeating-linear-gradient(0deg,#35475a 0 8px,#405467 8px 12px)!important;
+  box-shadow:inset 0 2px 0 #657d90,inset 0 -2px 0 #293d51!important;
+}
+.tile.hf-container-tile .terrain,
+.tile.hf-container-tile .scenery-label,
+.tile.hf-container-tile .terrain-text {
+  font-family:inherit!important;font-size:clamp(8px,1.8vw,12px)!important;
+  font-weight:900!important;letter-spacing:.015em!important;color:#cfdeea!important;
+  text-shadow:0 1px 3px #112436!important;
+}
+.tile.hf-container-tile.hf-stacked-tile{box-shadow:inset 0 2px 0 #8aa9bd,inset 0 -2px 0 #344b62!important}

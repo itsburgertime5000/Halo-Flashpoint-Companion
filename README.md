@@ -35,3 +35,11 @@ The two maps now use matching subdued L-wall visuals (original orientations pres
 - A distinct localStorage key saves its match separately from Generator Raid and Oddball.
 - The four `assets/koth-scene-*.webp` images rotate on the home-page card (14-second interval, 2.4-second crossfade).
 - All four pages must be published together in the same GitHub Pages directory, including `shared-theme.css` and `assets/`.
+
+
+## v11 visual updates
+- Restored shared-theme.css and the complete assets folder (missing in prior v10 archive).
+- King of the Hill L-walls in B2 and G7; the two provisional orientations can be adjusted later.
+- King of the Hill central 1x2 UNSC containers: D4-E4, D5-E5, with a third stacked on E4-E5 (+1 elevation).
+- Unified UNSC container styling across all three tactical maps.
+- Upload the **contents of this ZIP** to your GitHub Pages publish directory, keeping HTML, CSS and assets at their original relative paths.
