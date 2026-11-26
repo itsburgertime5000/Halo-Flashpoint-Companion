@@ -58,3 +58,8 @@ Restored the full navigation layout and button styling to King of the Hill and a
 ## v15 — Homepage label and site icons
 
 The homepage eyebrow reads **HALO FLASHPOINT**. All pages reference the provided favicon, PNG favicon variants, iOS touch icon and web manifest. Keep these icon files and `site.webmanifest` in the same folder as `index.html` when deploying to GitHub Pages. The web manifest uses relative paths so the icons work under a project repository URL.
+
+
+## Social link preview (v16)
+
+All four HTML pages now include Open Graph and Twitter Card metadata. Upload `share-preview.jpg` to the same folder as `index.html` when publishing via GitHub Pages, and keep `site.webmanifest` and `assets/`. The absolute URLs are set to `https://itsburgertime5000.github.io/Halo-Flashpoint-Game-Companion/`. Sharing previews may be cached by apps.
