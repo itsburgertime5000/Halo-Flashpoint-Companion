@@ -23,3 +23,7 @@ Visual update v6: Removed the eyebrow labels from both game-mode headings. All t
 - Each entire card is a keyboard-accessible link to its own game page; the colored action bar remains as the visual affordance.
 - Updated `shared-theme.css` to align card spacing, text, colors, buttons, and surfaces with the two gameplay pages.
 - Both game-mode pages retain their existing independent local save keys and tracking rules.
+
+## v8 tactical map update
+
+The two maps now use matching subdued L-wall visuals (original orientations preserved) and square-edged tower markers without TWR labels. Husky tower tiles also show their +1 elevation badges.

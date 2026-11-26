@@ -176,7 +176,7 @@ function buildMap(){
   const red=RED_DEPLOY.has(cell),blue=BLUE_DEPLOY.has(cell);
   const unsc=HUSKY_UNSC.has(cell),pad=HUSKY_PADS.has(cell),platform=HUSKY_PLATFORMS.has(cell),tower=HUSKY_TOWERS.has(cell),weapon=HUSKY_WEAPONS.has(cell);
   const cls=['tile',red?'zone-red':'',blue?'zone-blue':'',unsc?'terrain-unsc':'',pad?'terrain-pad':'',platform?'terrain-platform':'',tower?'terrain-tower':'',HUSKY_CORNERS.has(cell)?'has-corner':'',has?'has-ball':'',n?'has-item':''].filter(Boolean).join(' ');
-  const scenery=unsc&&HUSKY_UNSC_LABELS.has(cell)?'<span class="scenery-label">UNSC</span>':pad&&!weapon?'<span class="scenery-pad"></span>':platform?'<span class="scenery-panel"></span>':tower?'<span class="scenery-tower"></span>':'';
+  const scenery=unsc&&HUSKY_UNSC_LABELS.has(cell)?'<span class="scenery-label">UNSC</span>':pad&&!weapon?'<span class="scenery-pad"></span>':platform?'<span class="scenery-panel"></span>':tower?'<span class="tower-surface" aria-hidden="true"></span><span class="elev-badge">+1</span>':'';
   const wall=HUSKY_CORNERS.has(cell)?`<span class="tactical-wall ${cell==='F3'?'top-right':'bottom-left'}" aria-hidden="true"></span>`:'';
   const drop=weapon?'<span class="weapon-drop">W</span>':'';
   const oddball=has?`<span class="oddmark ${state.holder?'held':''}" aria-label="Oddball">☠</span>`:'';
