@@ -54,3 +54,7 @@ Restored the full navigation layout and button styling to King of the Hill and a
 - B2 L-wall rotated counterclockwise (bottom-right); G7 L-wall rotated clockwise (top-left).
 - G2 and B7 +1 towers use Husky Oddball-style square terrain artwork.
 - Generator Raid and Husky Oddball logic and visual maps are unchanged.
+
+## v15 — Homepage label and site icons
+
+The homepage eyebrow reads **HALO FLASHPOINT**. All pages reference the provided favicon, PNG favicon variants, iOS touch icon and web manifest. Keep these icon files and `site.webmanifest` in the same folder as `index.html` when deploying to GitHub Pages. The web manifest uses relative paths so the icons work under a project repository URL.

@@ -1,0 +1,22 @@
+{
+  "name": "Halo Flashpoint Game Companion",
+  "short_name": "Halo Flashpoint",
+  "icons": [
+    {
+      "src": "android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#0a1523",
+  "background_color": "#070e1a",
+  "display": "standalone",
+  "description": "Tactical companion for Halo: Flashpoint game modes",
+  "start_url": "./index.html",
+  "scope": "./"
+}
