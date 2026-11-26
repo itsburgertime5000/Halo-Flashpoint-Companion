@@ -183,3 +183,11 @@ body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,
 .tactical-map-panel .tile .tactical-wall.top-right {
   right:8%;top:8%;border-top:2px solid #91a7b9;border-right:2px solid #91a7b9;
 }
+
+/* v9: third game mode and compact four-way navigation */
+@media(min-width:940px){.grid{grid-template-columns:repeat(3,minmax(0,1fr))!important}.mode .visual{height:192px!important}.mode-link .mode-content{padding:14px 16px 18px!important}.mode-link .mode-content h2{font-size:22px!important}.mode-link .mode-content p{min-height:85px!important}}
+@media(min-width:701px) and (max-width:939px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}}
+@media(max-width:600px){.site-links{grid-template-columns:repeat(2,minmax(0,1fr))!important}.site-links a{font-size:11px!important;min-height:42px!important;display:flex;align-items:center;justify-content:center}}
+#main-app .hill-layout .panel,#main-app .info-grid .panel{background:linear-gradient(165deg,#14283b,#101d2c)!important;border:1px solid var(--hf-border)!important;border-radius:var(--hf-radius)!important;padding:16px!important}
+#main-app .hill-layout .capture button{min-height:44px!important}
+#main-app .score-quick button{min-height:44px!important}

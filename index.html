@@ -25,8 +25,8 @@ button{min-height:42px}
 .slideshow-visual .tag{z-index:2}
 @media(prefers-reduced-motion:reduce){.slideshow-visual .slide-layer{transition:none}.mode-link{transition:none}}
 </style>
-<link rel="stylesheet" href="shared-theme.css"></head><body><main class="shell"><nav class="site-nav" aria-label="Game modes"><a class="site-brand" href="index.html"><b>✦</b> HALO: FLASHPOINT · COMPANION</a><div class="site-links"><a href="index.html" aria-current="page">Home</a><a href="generator-raid.html">Generator Raid</a><a href="husky-oddball.html">Husky Oddball</a></div></nav>
-<section class="hero"><div class="eyebrow">UNSC / TACTICAL OPERATIONS</div><h1>GAME <span>COMPANION</span></h1><div class="stats"><div class="stat">◈ 2 game modes</div><div class="stat">▦ Interactive battlefield maps</div><div class="stat">✓ Progress saved per mode</div></div></section><div class="eyebrow">SELECT OPERATION</div><section class="grid" aria-label="Available game modes">
+<link rel="stylesheet" href="shared-theme.css"></head><body><main class="shell"><nav class="site-nav" aria-label="Game modes"><a class="site-brand" href="index.html"><b>✦</b> HALO: FLASHPOINT · COMPANION</a><div class="site-links"><a href="index.html" aria-current="page">Home</a><a href="generator-raid.html">Generator Raid</a><a href="husky-oddball.html">Husky Oddball</a><a href="husky-king-of-the-hill.html">King of the Hill</a></div></nav>
+<section class="hero"><div class="eyebrow">UNSC / TACTICAL OPERATIONS</div><h1>GAME <span>COMPANION</span></h1><div class="stats"><div class="stat">◈ 3 game modes</div><div class="stat">▦ Interactive battlefield maps</div><div class="stat">✓ Progress saved per mode</div></div></section><div class="eyebrow">SELECT OPERATION</div><section class="grid" aria-label="Available game modes">
   <a class="mode mode-link" href="generator-raid.html" aria-label="Open Generator Raid game mode">
     <div class="visual slideshow-visual generator-visual" data-slideshow="generator" aria-hidden="true">
       <div class="slide-layer active" style="background-image:url('assets/halo-scene-1.webp')"></div>
@@ -53,11 +53,17 @@ button{min-height:42px}
       <span class="launch">OPEN HUSKY ODDBALL <span aria-hidden="true">↗</span></span>
     </div>
   </a>
+
+  <a class="mode mode-link" href="husky-king-of-the-hill.html" aria-label="Open Husky King of the Hill game mode">
+    <div class="visual slideshow-visual koth-visual" data-slideshow="koth" aria-hidden="true"><div class="slide-layer active" style="background-image:url('assets/koth-scene-1.webp')"></div><div class="slide-layer" style="background-image:url('assets/koth-scene-2.webp')"></div><span class="tag">OPERATION 03 / HILL CONTROL</span></div>
+    <div class="mode-content"><h2>Husky King of the Hill</h2><p>Capture five rotating hills. Track flag control, end-round hill scoring and combat Victory Points.</p><div class="features"><span>5 rounds</span><span>Rotating hills</span><span>Capture +5 VP</span></div><span class="launch">OPEN KING OF THE HILL <span aria-hidden="true">↗</span></span></div>
+  </a>
 </section></main><script>
 (()=>{'use strict';
  const playlists={
   generator:['assets/halo-scene-1.webp','assets/halo-scene-2.webp','assets/halo-scene-3.webp','assets/halo-scene-4.webp'],
-  oddball:['assets/oddball-scene-1.webp','assets/oddball-scene-2.webp','assets/oddball-scene-3.webp','assets/oddball-scene-4.webp']
+  oddball:['assets/oddball-scene-1.webp','assets/oddball-scene-2.webp','assets/oddball-scene-3.webp','assets/oddball-scene-4.webp'],
+  koth:['assets/koth-scene-1.webp','assets/koth-scene-2.webp','assets/koth-scene-3.webp','assets/koth-scene-4.webp']
  };
  const reduceMotion=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
  if(reduceMotion)return;

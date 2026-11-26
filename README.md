@@ -27,3 +27,11 @@ Visual update v6: Removed the eyebrow labels from both game-mode headings. All t
 ## v8 tactical map update
 
 The two maps now use matching subdued L-wall visuals (original orientations preserved) and square-edged tower markers without TWR labels. Husky tower tiles also show their +1 elevation badges.
+
+## King of the Hill (new in v9)
+- `husky-king-of-the-hill.html` is an independent five-round tracker using the supplied Husky King of the Hill scenario.
+- Round 1 is Hill A; rounds 2–5 randomly choose the remaining hills without replacement.
+- Plant/red/blue/clear flag controls. Hill capture scores +5 VP at round end, with +1 VP for each model killed and manual bonus adjustments.
+- A distinct localStorage key saves its match separately from Generator Raid and Oddball.
+- The four `assets/koth-scene-*.webp` images rotate on the home-page card (14-second interval, 2.4-second crossfade).
+- All four pages must be published together in the same GitHub Pages directory, including `shared-theme.css` and `assets/`.
