@@ -26,6 +26,16 @@ button,select{font:inherit;touch-action:manipulation;-webkit-tap-highlight-color
 .tile .zone-letter{z-index:4;text-shadow:0 2px 5px #07101b,0 0 8px #06101b}
 .tile .tower-tag{z-index:5}
 .tile .tactical-wall{z-index:2}
+
+/* Same complete navigation treatment as Generator Raid and Husky Oddball. */
+.site-nav{position:relative;z-index:4;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;border:1px solid #36556b;background:rgba(9,22,36,.94);border-radius:14px;padding:9px 12px;margin:0 0 22px;box-shadow:0 10px 30px #0003;backdrop-filter:blur(8px)}
+.site-brand{font-size:11px;font-weight:950;color:#d5f9f4;text-decoration:none;letter-spacing:.09em;display:flex;align-items:center;gap:8px}
+.site-brand b{display:inline-flex;align-items:center;justify-content:center;width:26px;height:26px;border-radius:8px;background:#153d51;color:#a1eaf4;border:1px solid #3b7181;font-size:14px}
+.site-links{display:flex;gap:5px;flex-wrap:wrap}
+.site-links a{color:#afc7d9;padding:9px 10px;border-radius:9px;text-decoration:none;font-size:11px;font-weight:800;white-space:nowrap;border:1px solid transparent;touch-action:manipulation}
+.site-links a:hover,.site-links a:focus-visible{background:#254052;color:#fff}
+.site-links a[aria-current="page"]{color:#b5f8e9;background:#153b46;border-color:#316e70}
+@media(max-width:570px){.site-nav{align-items:stretch;gap:8px}.site-links{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));width:100%}.site-links a{text-align:center;font-size:10px;padding:10px 4px}.site-brand{font-size:10px}}
 </style>
 <link rel="stylesheet" href="shared-theme.css">
 </head>

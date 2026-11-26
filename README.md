@@ -43,3 +43,6 @@ The two maps now use matching subdued L-wall visuals (original orientations pres
 - King of the Hill central 1x2 UNSC containers: D4-E4, D5-E5, with a third stacked on E4-E5 (+1 elevation).
 - Unified UNSC container styling across all three tactical maps.
 - Upload the **contents of this ZIP** to your GitHub Pages publish directory, keeping HTML, CSS and assets at their original relative paths.
+
+### v12 navigation fix
+Restored the full navigation layout and button styling to King of the Hill and added shared navigation layout defaults to `shared-theme.css`. Site links and game state keys remain unchanged.
